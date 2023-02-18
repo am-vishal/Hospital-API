@@ -57,6 +57,15 @@ The following environment variables are required:
 - jsonwebtoken
 - nodemon (development dependency)
 
+### Project Sample Images
+
+![doctor-login](https://raw.githubusercontent.com/am-vishal/Hospital-API/master/sample-images/doctor-login.png)
+![doctor-register](https://raw.githubusercontent.com/am-vishal/Hospital-API/master/sample-images/doctor-register.png)
+![patients-all-reports](https://raw.githubusercontent.com/am-vishal/Hospital-API/master/sample-images/patients-all-reports.png)
+![patients-create-report](https://raw.githubusercontent.com/am-vishal/Hospital-API/master/sample-images/patients-create-report.png)
+![patients-register](https://raw.githubusercontent.com/am-vishal/Hospital-API/master/sample-images/patients-register.png)
+![reports-status](https://raw.githubusercontent.com/am-vishal/Hospital-API/master/sample-images/reports-status.png)
+
 ### License
 
 This project is licensed under the ISC License.
