@@ -27,12 +27,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/doctors/register",
-					"protocol": "http",
+					"raw": "https://hospital-api-cn.onrender.com/doctors/register",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"hospital-api-cn",
+						"onrender",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"doctors",
 						"register"
@@ -62,12 +63,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/doctors/login",
-					"protocol": "http",
+					"raw": "https://hospital-api-cn.onrender.com/doctors/login",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"hospital-api-cn",
+						"onrender",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"doctors",
 						"login"
@@ -83,7 +85,7 @@
 				"header": [
 					{
 						"key": "JWT",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N0b3JJZCI6IjYzZjAxMDY2Y2FmMDU3NTU0NWEzZjQzNiIsImlhdCI6MTY3NjY4MDMxNywiZXhwIjoxNjc2NjgzOTE3fQ.WzDN7oBEsMpx9jpxTcnHeWCwx76paH8Hv96JNhoplCI",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N0b3JJZCI6IjYzZjAxMDY2Y2FmMDU3NTU0NWEzZjQzNiIsImlhdCI6MTY3NjY5MDExNSwiZXhwIjoxNjc2NjkzNzE1fQ.jMx_SZVLbG2Pw4V3sXrRt5a-f6FtkBhmQk8MIuzvskY",
 						"type": "text"
 					}
 				],
@@ -97,12 +99,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/patients/register",
-					"protocol": "http",
+					"raw": "https://hospital-api-cn.onrender.com/patients/register",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"hospital-api-cn",
+						"onrender",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"patients",
 						"register"
@@ -132,12 +135,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/patients/:id/create_report",
-					"protocol": "http",
+					"raw": "https://hospital-api-cn.onrender.com/patients/:id/create_report",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"hospital-api-cn",
+						"onrender",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"patients",
 						":id",
@@ -165,12 +169,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/patients/:id/all_reports",
-					"protocol": "http",
+					"raw": "https://hospital-api-cn.onrender.com/patients/:id/all_reports",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"hospital-api-cn",
+						"onrender",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"patients",
 						":id",
@@ -198,21 +203,21 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000//reports/:status",
-					"protocol": "http",
+					"raw": "https://hospital-api-cn.onrender.com/reports/:status",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"hospital-api-cn",
+						"onrender",
+						"com"
 					],
-					"port": "8000",
 					"path": [
-						"",
 						"reports",
 						":status"
 					],
 					"variable": [
 						{
 							"key": "status",
-							"value": "Negative"
+							"value": "Symptoms-Quarantine"
 						}
 					]
 				}
