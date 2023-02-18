@@ -1,12 +1,10 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 const port = 8000;
 const db = require("./config/mongoose");
 const indexRoutes = require("./routes/index");
-const fs = require("fs");
 
 const app = express();
 
@@ -28,7 +26,7 @@ app.get("/", (_req, res) => {
   }
 });
 
-app.use((_req, res, next) => {
+app.use((_req, res) => {
   res.status(404).sendFile(path.join(__dirname, "404.html"));
 });
 
