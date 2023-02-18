@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "ad72ea46-f3fd-4e4b-9258-f7fedecda52a",
+		"name": "Hospital-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14035613"
+	},
+	"item": [
+		{
+			"name": "doctors/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "secretkey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Vishal\",\r\n    \"password\": \"221\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/doctors/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"doctors",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctors/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "221B_Baker_Street",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Vishal\",\r\n    \"password\": \"221\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/doctors/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"doctors",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patients/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N0b3JJZCI6IjYzZjAxMDY2Y2FmMDU3NTU0NWEzZjQzNiIsImlhdCI6MTY3NjY4MDMxNywiZXhwIjoxNjc2NjgzOTE3fQ.WzDN7oBEsMpx9jpxTcnHeWCwx76paH8Hv96JNhoplCI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ajay\",\r\n    \"phone\": \"5857\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/patients/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"patients",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patients/create-report",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N0b3JJZCI6IjYzZjAxMDY2Y2FmMDU3NTU0NWEzZjQzNiIsImlhdCI6MTY3NjY3ODA4MywiZXhwIjoxNjc2NjgxNjgzfQ.UBlyG7kFVTRbvYimA0OkyMJSQVwxee2Sdm3Tdscx2BI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": \"63f01066caf0575545a3f436\",\r\n    \"status\": \"Symptoms-Quarantine\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/patients/:id/create_report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"patients",
+						":id",
+						"create_report"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "63f0192945c7b27d8c63d92f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patients/all_reports",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N0b3JJZCI6IjYzZjAxMDY2Y2FmMDU3NTU0NWEzZjQzNiIsImlhdCI6MTY3NjY4MDMxNywiZXhwIjoxNjc2NjgzOTE3fQ.WzDN7oBEsMpx9jpxTcnHeWCwx76paH8Hv96JNhoplCI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/patients/:id/all_reports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"patients",
+						":id",
+						"all_reports"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "63f0192945c7b27d8c63d92f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reports/status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "JWT",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N0b3JJZCI6IjYzZjAxMDY2Y2FmMDU3NTU0NWEzZjQzNiIsImlhdCI6MTY3NjY4MDMxNywiZXhwIjoxNjc2NjgzOTE3fQ.WzDN7oBEsMpx9jpxTcnHeWCwx76paH8Hv96JNhoplCI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000//reports/:status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"",
+						"reports",
+						":status"
+					],
+					"variable": [
+						{
+							"key": "status",
+							"value": "Negative"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
